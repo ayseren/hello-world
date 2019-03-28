@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title></title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        
+        <style type="text/css">
+            .alan{   
+                width:100px;
+                height:100px;
+                background-color:red;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div class="alan">
+        
+        </div>
+        
+        <script type="text/javascript">
+            
+            
+            
+            //ayni anlamdalar document.getElementById("circle").onclick= function(){} ve $("#circle").click(function(){}); ayrica #circle yerine div yazarsan tum divlerd etkili olur
+            //innerHTML ile .html ayni anlamdalar. ancak .html get(mesela alert icin de kullanilir) de yapabilir change de.
+            //this in anlami (click icinde kullanilinca) click yApilan uzerinde islem yap
+            
+            $(function(){
+
+	        $(".alan").click(function(){
+                $(this).animate({
+
+				marginLeft:"300px"
+
+			},500).animate({
+
+				marginTop:"100px",
+
+				width:"200px"
+
+			},1000,function(){
+
+				$(this).css("background-color","yellow");
+                
+                            });
+                        });
+                        });
+            
+            
+        </script>
+    </body>
+</html>
