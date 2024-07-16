@@ -30,28 +30,19 @@
             //innerHTML ile .html ayni anlamdalar. ancak .html get(mesela alert icin de kullanilir) de yapabilir change de.
             //this in anlami (click icinde kullanilinca) click yApilan uzerinde islem yap
             
+            // branch icerisindeki yorum satiri
             $(function(){
-
-	        $(".alan").click(function(){
-                $(this).animate({
-
-				marginLeft:"300px"
-
-			},500).animate({
-
-				marginTop:"100px",
-
-				width:"200px"
-
-			},1000,function(){
-
-				$(this).css("background-color","yellow");
-                
-                            });
-                        });
-                        });
-            
-            
+                $(".alan").click(function(){
+                    $(this).animate({
+                        marginLeft:"300px"
+                    },500).animate({
+                        marginTop:"100px",
+                        width:"200px"
+                    },1000,function(){
+                        $(this).css("background-color","yellow");
+                    });
+                });
+            });
         </script>
     </body>
 </html>
